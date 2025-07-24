@@ -16,11 +16,11 @@ artifactory:
 
   resources:
     requests:
-      cpu: "1"
-      memory: 4Gi
+      cpu: "100m"
+      memory: 1Gi
     limits:
       # cpu: "10"
-      memory: 5Gi
+      memory: 1.25Gi
 
   javaOpts:
     other: >
