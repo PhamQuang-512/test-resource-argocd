@@ -1,0 +1,49 @@
+artifactory:
+  nginx:
+    enabled: false
+  ingress:
+    enabled: true
+    hosts:
+      - jfrog.quangpham5.site
+    className: nginx
+    # tls:
+    #   - hosts:
+    #     - jfrog.quangpham5.site
+    #     secretName: int-nexa-mobi-wildcard-cert
+  # customIngress:
+  #   apiVersion: networking.k8s.io/v1
+  #   kind: Ingress
+  #   metadata:
+  #     name: my-custom-ingress
+  #     annotations:
+  #       nginx.ingress.kubernetes.io/rewrite-target: /
+  #   spec:
+  #     rules:
+  #       - host: app.example.com
+  #         http:
+  #           paths:
+  #             - path: /
+  #               pathType: Prefix
+  #               backend:
+  #                 service:
+  #                   name: my-service
+  #                   port:
+  #                     number: 80
+  postgresql:
+    # enabled: false
+    auth:
+      password: Kohhwefwe123
+  # database:
+  #   allowNonPostgresql: false
+  #   type: postgresql
+  #   driver: org.postgresql.Driver
+  #   secrets:
+  #     user:
+  #       name: "rds-artifactory"
+  #       key: "db-user"
+  #     password:
+  #       name: "rds-artifactory"
+  #       key: "db-password"
+  #     url:
+  #       name: "rds-artifactory"
+  #       key: "db-url"
