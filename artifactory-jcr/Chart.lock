@@ -1,0 +1,6 @@
+dependencies:
+- name: artifactory
+  repository: file://charts/artifactory
+  version: 107.111.12
+digest: sha256:c2ebe82c829885679ef772da8808de1afea45bb6bade7c2d90af5c898a35ad52
+generated: "2025-07-24T15:57:07.78476+07:00"
